@@ -1,0 +1,33 @@
+﻿@import "bootstrap-4.2.1/scss/bootstrap.scss";
+@import "font-awesome-4.7.0/scss/font-awesome.scss";
+@import "../Js/fancybox-master/dist/jquery.fancybox-m.scss";
+@import "../Js/slick-1.8.1/slick/slick.scss";
+@import "slick.scss";
+
+@import "font-face.scss";
+@import "image.scss";
+
+
+
+html,body{overflow-x:hidden}
+
+/*#region Khối bài viết mẫu dạng ngang (ảnh 1 bên, nội dung 1 bên) */
+.item-row{display:flex;flex-wrap:wrap;margin-left:-15px;margin-right:-15px;
+          .item-img{width:33.33%;padding-left:15px;padding-right:15px}
+          .item-body{flex-basis:0;flex-grow:1;max-width:100%;padding-left:15px;padding-right:15px}
+
+          &.no-gutters{margin-left:0;margin-right:0;
+                      .item-img,
+                      .item-body{padding-left:0;padding-right:0}
+          }
+}
+/*#endregion */
+
+/*#region Khối các tab */
+.tabs-content .tab-content{display:none}
+.tabs-content .tab-content.active{display:block}
+/*#endregion */
+
+/* My style */
+@import "nbStyle_for_all.scss";
+@import "nbStyle.scss";
